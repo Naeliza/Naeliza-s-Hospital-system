@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEFF804B-8725-45E2-8068-87352AA0D1ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>D:\Escritorio\Bonitura\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.13.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsultarAltas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAltas.Designer.cs">
+      <DependentUpon>ConsultarAltas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCitas.Designer.cs">
+      <DependentUpon>ConsultarCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarHabitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarHabitaciones.Designer.cs">
+      <DependentUpon>ConsultarHabitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarInternamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarInternamiento.Designer.cs">
+      <DependentUpon>ConsultarInternamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarMedicos.Designer.cs">
+      <DependentUpon>ConsultarMedicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarPacientes.Designer.cs">
+      <DependentUpon>ConsultarPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasBase.Designer.cs">
+      <DependentUpon>ConsultasBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudAltaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudAltaMedica.Designer.cs">
+      <DependentUpon>CrudAltaMedica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudBase.Designer.cs">
+      <DependentUpon>CrudBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudCita.Designer.cs">
+      <DependentUpon>CrudCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudDoctor.Designer.cs">
+      <DependentUpon>CrudDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudHabitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudHabitaciones.Designer.cs">
+      <DependentUpon>CrudHabitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudInternamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudInternamiento.Designer.cs">
+      <DependentUpon>CrudInternamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudPacientes.Designer.cs">
+      <DependentUpon>CrudPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProg1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalProg1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormCitasDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCitasDoctor.Designer.cs">
+      <DependentUpon>FormCitasDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCitasFechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCitasFechas.Designer.cs">
+      <DependentUpon>FormCitasFechas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCitasPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCitasPacientes.Designer.cs">
+      <DependentUpon>FormCitasPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacturarTipoIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacturarTipoIngreso.Designer.cs">
+      <DependentUpon>FormFacturarTipoIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacturaFechaIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacturaFechaIngreso.Designer.cs">
+      <DependentUpon>FormFacturaFechaIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacturaAltaFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacturaAltaFecha.Designer.cs">
+      <DependentUpon>FormFacturaAltaFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacturaMedicosEspe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacturaMedicosEspe.Designer.cs">
+      <DependentUpon>FormFacturaMedicosEspe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacturarAltaPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacturarAltaPaciente.Designer.cs">
+      <DependentUpon>FormFacturarAltaPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacturarHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacturarHabitacion.Designer.cs">
+      <DependentUpon>FormFacturarHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacturarMedicosNom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacturarMedicosNom.Designer.cs">
+      <DependentUpon>FormFacturarMedicosNom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReporteAsegurado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteAsegurado.Designer.cs">
+      <DependentUpon>FormReporteAsegurado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReporteCedula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteCedula.Designer.cs">
+      <DependentUpon>FormReporteCedula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportePaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportePaciente.Designer.cs">
+      <DependentUpon>FormReportePaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoAll.Designer.cs">
+      <DependentUpon>MantenimientoAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="ConsultarAltas.resx">
+      <DependentUpon>ConsultarAltas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCitas.resx">
+      <DependentUpon>ConsultarCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarHabitaciones.resx">
+      <DependentUpon>ConsultarHabitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarInternamiento.resx">
+      <DependentUpon>ConsultarInternamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarMedicos.resx">
+      <DependentUpon>ConsultarMedicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarPacientes.resx">
+      <DependentUpon>ConsultarPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasBase.resx">
+      <DependentUpon>ConsultasBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudAltaMedica.resx">
+      <DependentUpon>CrudAltaMedica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudBase.resx">
+      <DependentUpon>CrudBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudCita.resx">
+      <DependentUpon>CrudCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudDoctor.resx">
+      <DependentUpon>CrudDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudHabitaciones.resx">
+      <DependentUpon>CrudHabitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudInternamiento.resx">
+      <DependentUpon>CrudInternamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudPacientes.resx">
+      <DependentUpon>CrudPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCitasDoctor.resx">
+      <DependentUpon>FormCitasDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCitasFechas.resx">
+      <DependentUpon>FormCitasFechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCitasPacientes.resx">
+      <DependentUpon>FormCitasPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacturaAltaFecha.resx">
+      <DependentUpon>FormFacturaAltaFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacturaFechaIngreso.resx">
+      <DependentUpon>FormFacturaFechaIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacturaMedicosEspe.resx">
+      <DependentUpon>FormFacturaMedicosEspe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacturarAltaPaciente.resx">
+      <DependentUpon>FormFacturarAltaPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacturarHabitacion.resx">
+      <DependentUpon>FormFacturarHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacturarMedicosNom.resx">
+      <DependentUpon>FormFacturarMedicosNom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacturarTipoIngreso.resx">
+      <DependentUpon>FormFacturarTipoIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteAsegurado.resx">
+      <DependentUpon>FormReporteAsegurado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteCedula.resx">
+      <DependentUpon>FormReporteCedula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportePaciente.resx">
+      <DependentUpon>FormReportePaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoAll.resx">
+      <DependentUpon>MantenimientoAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReporteCitasPaciente.rdlc" />
+    <EmbeddedResource Include="ReporteCitasDoctor.rdlc" />
+    <EmbeddedResource Include="ReporteCitasFecha.rdlc" />
+    <EmbeddedResource Include="ReporteIngresoFecha.rdlc" />
+    <EmbeddedResource Include="ReporteIngresoTipo.rdlc" />
+    <EmbeddedResource Include="ReporteHabitacion.rdlc" />
+    <EmbeddedResource Include="ReportePacienteAsegurado.rdlc" />
+    <EmbeddedResource Include="ReportePacienteNombre.rdlc" />
+    <EmbeddedResource Include="ReportePacienteCedula.rdlc" />
+    <EmbeddedResource Include="ReporteAltaFecha.rdlc" />
+    <EmbeddedResource Include="ReporteAltaPaciente.rdlc" />
+    <EmbeddedResource Include="ReporteFisicoMedicoEspe.rdlc" />
+    <EmbeddedResource Include="ReporteFisicoMedicoNom.rdlc" />
+    <None Include="FinalProg1DataSet.xsc">
+      <DependentUpon>FinalProg1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProg1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalProg1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalProg1DataSet.xss">
+      <DependentUpon>FinalProg1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{22731719-909f-428e-b85b-6ea1f8aa05be}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{6fedfc93-d963-443c-8d9d-ea212dbf6da3}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
